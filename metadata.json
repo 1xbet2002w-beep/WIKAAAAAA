@@ -1,0 +1,6 @@
+{
+  "name": "RASD AI",
+  "description": "منظومة الاستخبارات الكروية وتحليل المباريات بالذكاء الاصطناعي الجماعي",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
