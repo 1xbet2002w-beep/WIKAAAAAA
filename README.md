@@ -1,11 +1,18 @@
-<div align="center">
+# RASD AI
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Arabic football analysis dashboard with an Express API and a React/Vite interface.
 
-  <h1>Built with AI Studio</h2>
+## Development
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+Use Node.js 24, run `npm ci`, then `netlify dev --port 8889`.
+Netlify supplies the database connection and AI Gateway configuration.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Hosting
 
-</div>
+Netlify publishes `dist` and runs `netlify/server/index.mjs` for `/api/*`.
+The build command is `npm run build`. Application settings, the prediction ledger,
+analysis sessions and demo state persist in Netlify Database. Database migrations
+in `netlify/database/migrations` are applied during deployment.
+
+Run `npm run lint` for TypeScript validation. `/api/health` checks the API process;
+`/api/qa/run` runs the application's verification suite.
